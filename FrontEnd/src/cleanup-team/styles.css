@@ -1,0 +1,36 @@
+/* Header nav shows inline on desktop; hidden on small screens (bottom nav takes over) */
+.header-nav-desktop {
+  display: flex;
+}
+
+/* Bottom nav shows on small screens only; header nav takes over on desktop */
+.bottom-nav-mobile {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .header-nav-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .bottom-nav-mobile {
+    display: none;
+  }
+}
+
+/* Leaflet popup font consistency */
+.leaflet-popup-content-wrapper {
+  border-radius: 12px;
+}
+.leaflet-popup-content {
+  margin: 12px 14px;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+.leaflet-tooltip {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  font-family: 'Inter', system-ui, sans-serif;
+}
